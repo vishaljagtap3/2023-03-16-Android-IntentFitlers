@@ -14,9 +14,10 @@ class ImageViewerActivity : AppCompatActivity() {
         binding = ImageActivityBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.img.setImageURI(
+        /*binding.img.setImageURI(
             Uri.parse(intent.getStringExtra("path"))
-        )
+        )*/
+        binding.img.setImageURI(intent.data)
     }
 
 }

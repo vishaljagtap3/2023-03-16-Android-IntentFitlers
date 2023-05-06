@@ -17,10 +17,15 @@
         <activity android:name=".ImageViewerActivity"
             android:exported="true">
             <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <action android:name="android.intent.action.VIEW"/>
                 <action android:name="com.bitcodetech.media.VIEW"/>
                 <action android:name="com.bitcodetech.media.SHOW"/>
                 <category android:name="android.intent.category.DEFAULT"/>
                 <category android:name="com.bitcodetech.cat.GENERAL"/>
+                <data android:scheme="file" android:mimeType="image/jpeg"/>
+                <data android:scheme="file" android:mimeType="image/png"/>
+                <data android:scheme="file" android:mimeType="image/*"/>
             </intent-filter>
         </activity>
 
